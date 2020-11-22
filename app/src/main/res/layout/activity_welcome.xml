@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcome">
+
+    <ImageView
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_boostravel"
+        />
+
+    <ImageView
+      android:id="@+id/logo"
+      android:layout_below="@id/atas"
+      android:layout_marginTop="30dp"
+      android:layout_centerInParent="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_logo"
+      />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_below="@id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang"
+        android:fontFamily="@font/bold"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+    />
+
+    <TextView
+        android:id="@+id/penjelasan"
+        android:layout_below="@+id/welcome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur Nulla lobortis in blandit a massa tellus feugiat dolor, Nisi, justo tellus posuere semper euismod."
+        android:gravity="center"
+        android:fontFamily="@font/regular"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_below="@id/penjelasan"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginRight="40dp"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:backgroundTint="@color/main"/>
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:backgroundTint="@color/main"/>
+    </LinearLayout>
+</RelativeLayout>

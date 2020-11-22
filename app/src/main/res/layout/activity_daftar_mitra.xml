@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".daftar_mitra">
+
+    <ImageView
+        android:id="@+id/cardLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_atas_daftar_mitra"
+        />
+
+    <LinearLayout
+        android:id="@+id/daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/cardLogo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="NAMA"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/bold"
+            />
+
+        <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="EMAIL"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/bold"
+            />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="NO HP"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/bold"
+            />
+
+        <EditText
+            android:id="@+id/edtNoHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="ALAMAT"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/bold"
+            />
+
+        <EditText
+            android:id="@+id/edtAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="PASSWORD"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/bold"
+            />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            />
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/main"
+            android:textAllCaps="false"
+            android:text="Daftar"
+            android:fontFamily="@font/bold"
+            />
+    </LinearLayout>
+</RelativeLayout>

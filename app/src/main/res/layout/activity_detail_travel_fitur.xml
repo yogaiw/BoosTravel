@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail_travel_fitur">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_bg_biru"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/main"
+        android:src="@drawable/ic_back"
+        />
+
+    <TextView
+        android:id="@+id/list_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Travel"
+        android:fontFamily="@font/bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentLeft = "true"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_below="@id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/travel"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fitur"
+        android:layout_below="@id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/nama_travel"
+        android:layout_below="@id/fitur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sinar Jaya Travel"
+        android:fontFamily="@font/bold"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/jurusan"
+        android:layout_below="@id/nama_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PATAS ● PWT - JKT"
+        android:textColor="@color/line"
+        android:fontFamily="@font/regular"
+        android:textSize="12sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/fitur"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+
+    <TextView
+        android:id="@+id/spesifikasi"
+        android:layout_below="@id/line1"
+        android:fontFamily="@font/bold"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spesifikasi Travel"
+        />
+
+    <TextView
+        android:id="@+id/kapasitas"
+        android:layout_below="@id/spesifikasi"
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kapasitas Kursi 10"
+        android:fontFamily="@font/regular"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <TextView
+        android:id="@+id/format"
+        android:layout_below="@id/kapasitas"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Format Kursi 4-4"
+        android:fontFamily="@font/regular"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <TextView
+        android:id="@+id/mobil"
+        android:layout_below="@id/format"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Toyota Rush)"
+        android:fontFamily="@font/regular"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="127dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+
+    <TextView
+        android:id="@+id/fasilitas"
+        android:layout_below="@id/line2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fasilitas"
+        android:fontFamily="@font/bold"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/btn_pengumuman"
+        android:layout_below="@id/fasilitas"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

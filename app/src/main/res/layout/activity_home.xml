@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <ImageView
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_boostravel"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fitur"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="100dp"
+        />
+
+    <TextView
+        android:id="@+id/pengumuman"
+        android:layout_below="@id/fitur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bold"
+        android:textSize="14sp"
+        android:text="Pengumuman"
+        />
+    <TextView
+        android:id="@+id/penjelasan_pengumuman"
+        android:layout_below="@id/pengumuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Cek informasi terkini bus - travel"
+        android:fontFamily="@font/regular"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:id="@+id/btn_pengumuman"
+        android:layout_below="@id/penjelasan_pengumuman"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageButton
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            />
+
+        <ImageButton
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/inspirasiliburan"
+        android:layout_below="@id/btn_pengumuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bold"
+        android:textSize="14sp"
+        android:text="Inspirasi Liburan"
+        />
+    <TextView
+        android:id="@+id/penjelasan_inspirasi"
+        android:layout_below="@id/inspirasiliburan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Cek informasi terkini bus - travel"
+        android:fontFamily="@font/regular"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:id="@+id/btn_inspirasi"
+        android:layout_below="@id/penjelasan_inspirasi"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

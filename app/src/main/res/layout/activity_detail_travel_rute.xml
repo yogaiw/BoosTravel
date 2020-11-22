@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context=".detail_travel_rute">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_bg_biru"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/main"
+        android:src="@drawable/ic_back"
+        />
+
+    <TextView
+        android:id="@+id/list_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Travel"
+        android:fontFamily="@font/bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentLeft = "true"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_below="@id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/travel"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fitur"
+        android:layout_below="@id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/jadwal"
+        android:layout_below="@id/fitur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Jadwal"
+        android:fontFamily="@font/bold"
+        android:textSize="14sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detail_jadwal"
+        android:layout_below="@id/jadwal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardBackgroundColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/rute"
+        android:layout_below="@id/detail_jadwal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rute"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/bold"
+        android:textSize="14sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/black"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detail_rute"
+        android:layout_below="@id/rute"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardBackgroundColor="@color/white"
+        />
+
+</RelativeLayout>

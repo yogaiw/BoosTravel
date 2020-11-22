@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_atas_login"
+        />
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/logo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BoosTravel!"
+            android:textSize="24sp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="EMAIL"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/bold"
+            />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="PASSWORD"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/bold"
+            />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Login"
+            android:backgroundTint="@color/main"
+            android:fontFamily="@font/bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/login">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Akun?"
+            android:textAlignment="center"
+            android:fontFamily="@font/regular"
+            android:textSize="12sp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:layout_marginLeft="5dp"
+            android:text="Daftar"
+            android:textColor="@color/main"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+</RelativeLayout>

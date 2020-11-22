@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pengumuman">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_bg_biru"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/main"
+        android:src="@drawable/ic_back"
+        />
+
+    <TextView
+        android:id="@+id/list_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengumuman"
+        android:fontFamily="@font/bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentLeft = "true"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_below="@id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pengumuman"
+        />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_below="@id/gambar"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panduan Trip Saat Pandemi"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/kalimat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna ac amet facilisi non consectetur non nec vel urna. In mauris turpis mauris justo, elementum id quam congue. Molestie consequat molestie nunc, molestie dui fermentum, scelerisque vel. Commodo congue ultricies ac arcu, pellentesque nunc."
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_below="@id/judul"
+        />
+
+    <TextView
+        android:id="@+id/kalimat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna ac amet facilisi non consectetur non nec vel urna. In mauris turpis mauris justo, elementum id quam congue. Molestie consequat molestie nunc, molestie dui fermentum, scelerisque vel. Commodo congue ultricies ac arcu, pellentesque nunc."
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_below="@id/kalimat1"
+        />
+
+</RelativeLayout>

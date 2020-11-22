@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".list_travel">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_bg_biru"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/main"
+        android:src="@drawable/ic_back"
+        />
+
+    <TextView
+        android:id="@+id/list_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Travel"
+        android:fontFamily="@font/bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentLeft = "true"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/found_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="10 Trave Ditemukan"
+        />
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/found_travel"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="128dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+    <View
+        android:id="@+id/line3"
+        android:layout_below="@id/line2"
+        android:layout_marginTop="128dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+    <View
+        android:id="@+id/line4"
+        android:layout_below="@id/line3"
+        android:layout_marginTop="128dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+    <View
+        android:id="@+id/line5"
+        android:layout_below="@id/line4"
+        android:layout_marginTop="128dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+</RelativeLayout>
