@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".travel">
+    tools:context=".mitra_tambah_jurusan">
 
     <ImageView
         android:id="@+id/logo"
@@ -27,7 +27,7 @@
         android:id="@+id/travel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Travel"
+        android:text="Tambah Jurusan"
         android:fontFamily="@font/bold"
         android:textSize="18dp"
         android:layout_marginLeft="80sp"
@@ -58,33 +58,9 @@
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"/>
 
-    <TextView
-        android:id="@+id/harga"
-        android:layout_below="@id/spinner2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:text="HARGA"
-        android:layout_marginTop="30sp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:fontFamily="@font/bold"
-        />
-
-    <EditText
-        android:layout_below="@id/harga"
-        android:id="@+id/edtHarga"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        />
-
     <Button
         android:id="@+id/btn_cari"
-        android:layout_below="@id/edtHarga"
+        android:layout_below="@id/spinner2"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginStart="30dp"
@@ -92,7 +68,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textAllCaps="false"
-        android:text="Tambah"
+        android:text="Cari"
         android:backgroundTint="@color/main"
         android:fontFamily="@font/bold"
         />

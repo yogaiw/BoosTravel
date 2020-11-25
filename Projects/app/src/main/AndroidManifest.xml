@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BoosTravel">
-        <activity android:name=".travel_tidak_ditemukan"></activity>
+        <activity android:name=".mitra_list_jurusan"></activity>
+        <activity android:name=".mitra_tambah_jurusan" />
+        <activity android:name=".mitra_lihat_feedback" />
+        <activity android:name=".mitra_riwayat_pesanan" />
+        <activity android:name=".mitra_home" />
+        <activity android:name=".travel_tidak_ditemukan" />
         <activity android:name=".detail_travel_rute" />
         <activity android:name=".detail_travel_fitur" />
         <activity android:name=".detail_travel" />

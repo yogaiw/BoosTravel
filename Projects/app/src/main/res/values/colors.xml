@@ -5,6 +5,6 @@
     <color name="black">#4F4F4F</color>
     <color name="line">#BDBDBD</color>
     <color name="bgcolor">#F2F2F2</color>
-
-
+    <color name="darkblue">#00375B</color>
+    <color name="button">#27AE60</color>
 </resources>

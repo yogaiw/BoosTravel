@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mitra_lihat_feedback">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_bg_biru"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/main"
+        android:src="@drawable/ic_back"
+        />
+
+    <TextView
+        android:id="@+id/list_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lihat Feedback"
+        android:fontFamily="@font/bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentLeft = "true"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_below="@id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="Feedback yang diberikan oleh User"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/feedback1"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:elevation="100dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masalah Lainnya"
+                android:fontFamily="@font/bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Menurut saya pelayanan dari agen sudah bagus hanya tinggal membenarkan beberapa yang harus dibenarkan supaya pelanggan merasa nyaman dan aman saat berkendaraa namun tidak hanya itu aku lagi ngapain ya sekarang xixixix yaudah gitu aja semoga semua baik baik saja pacck"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/feedback2"
+        android:layout_below="@id/feedback1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:elevation="100dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masalah Lainnya"
+                android:fontFamily="@font/bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Menurut saya pelayanan dari agen sudah bagus hanya tinggal membenarkan beberapa yang harus dibenarkan supaya pelanggan merasa nyaman dan aman saat berkendaraa namun tidak hanya itu aku lagi ngapain ya sekarang xixixix yaudah gitu aja semoga semua baik baik saja pacck"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/feedback3"
+        android:layout_below="@id/feedback2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:elevation="100dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masalah Lainnya"
+                android:fontFamily="@font/bold"
+                android:textSize="14sp"
+                android:textColor="@color/darkblue"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Menurut saya pelayanan dari agen sudah bagus hanya tinggal membenarkan beberapa yang harus dibenarkan supaya pelanggan merasa nyaman dan aman saat berkendaraa namun tidak hanya itu aku lagi ngapain ya sekarang xixixix yaudah gitu aja semoga semua baik baik saja pacck"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

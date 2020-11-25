@@ -47,25 +47,35 @@
         android:textSize="10sp"
         android:textColor="@color/black"
         />
+
     <LinearLayout
         android:id="@+id/btn_pengumuman"
         android:layout_below="@id/penjelasan_pengumuman"
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
+        android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
-        android:layout_height="130dp">
-
-        <ImageButton
-            android:layout_width="130dp"
+        android:layout_height="150dp">
+        <Button
+            android:layout_width="150dp"
             android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:text="Regulasi Pemerintah"
+            android:fontFamily="@font/bold"
+            android:textSize="12sp"
+            android:backgroundTint="@color/button"
             />
-
-        <ImageButton
-            android:layout_width="130dp"
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="150dp"
             android:layout_height="match_parent"
+            android:text="Panduan Saat Pandemi"
+            android:fontFamily="@font/bold"
+            android:textSize="12sp"
+            android:backgroundTint="@color/button"
             />
     </LinearLayout>
 
@@ -81,6 +91,7 @@
         android:textSize="14sp"
         android:text="Inspirasi Liburan"
         />
+
     <TextView
         android:id="@+id/penjelasan_inspirasi"
         android:layout_below="@id/inspirasiliburan"
@@ -92,6 +103,7 @@
         android:textSize="10sp"
         android:textColor="@color/black"
         />
+
     <LinearLayout
         android:id="@+id/btn_inspirasi"
         android:layout_below="@id/penjelasan_inspirasi"
@@ -102,17 +114,49 @@
         android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-        <ImageButton
+        <androidx.cardview.widget.CardView
+            android:id="@+id/konten1"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            />
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="80dp"
+            app:cardBackgroundColor="@color/white"
+            android:outlineSpotShadowColor="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_marginTop="10dp"
-            />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/bgkonten1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menikmati Hijaunya Alam"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="110dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alam memang memberikan kesegaran untuk kita"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="126dp"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 
 </RelativeLayout>

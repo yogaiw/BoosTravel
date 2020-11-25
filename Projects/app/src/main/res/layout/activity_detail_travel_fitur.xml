@@ -52,103 +52,139 @@
         app:cardBackgroundColor="@color/black"
         />
 
-    <TextView
+    <LinearLayout
         android:id="@+id/nama_travel"
         android:layout_below="@id/fitur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sinar Jaya Travel"
-        android:fontFamily="@font/bold"
-        android:textSize="14sp"
-        android:textColor="@color/black"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_marginTop="20dp"
-        />
-
-    <TextView
-        android:id="@+id/jurusan"
-        android:layout_below="@id/nama_travel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PATAS ● PWT - JKT"
-        android:textColor="@color/line"
-        android:fontFamily="@font/regular"
-        android:textSize="12sp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginTop="5dp"
-        />
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sinar Jaya Travel"
+            android:fontFamily="@font/bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/jurusan"
+            android:layout_below="@id/nama_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PATAS ● PWT - JKT"
+            android:textColor="@color/line"
+            android:fontFamily="@font/regular"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
 
     <View
         android:id="@+id/line1"
-        android:layout_below="@id/fitur"
-        android:layout_marginTop="80dp"
+        android:layout_below="@id/nama_travel"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/line"
         />
-
-    <TextView
+    
+    <LinearLayout
         android:id="@+id/spesifikasi"
         android:layout_below="@id/line1"
-        android:fontFamily="@font/bold"
-        android:textSize="14sp"
-        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Spesifikasi Travel"
-        />
+        android:layout_marginTop="20dp">
 
-    <TextView
-        android:id="@+id/kapasitas"
-        android:layout_below="@id/spesifikasi"
-        android:layout_marginTop="10sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kapasitas Kursi 10"
-        android:fontFamily="@font/regular"
-        android:textSize="12sp"
-        android:textColor="@color/black"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:fontFamily="@font/bold"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spesifikasi Travel"
+                />
+            <TextView
+                android:id="@+id/kapasitas"
+                android:layout_below="@id/spesifikasi"
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kapasitas Kursi 10"
+                android:fontFamily="@font/regular"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/format"
+                android:layout_below="@id/kapasitas"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Format Kursi 4-4"
+                android:fontFamily="@font/regular"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/mobil"
+                android:layout_below="@id/format"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Toyota Rush)"
+                android:fontFamily="@font/regular"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/format"
-        android:layout_below="@id/kapasitas"
-        android:layout_marginTop="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Format Kursi 4-4"
-        android:fontFamily="@font/regular"
-        android:textSize="12sp"
-        android:textColor="@color/black"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="100dp">
+            <TextView
+                android:fontFamily="@font/bold"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jadwal Berangkat"
+                />
+            <TextView
+                android:layout_below="@id/spesifikasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Hari Disini"
+                android:fontFamily="@font/regular"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                />
+           <Spinner
+               android:layout_width="110dp"
+               android:layout_height="40dp"
+               android:background="@android:drawable/btn_dropdown"
+               android:layout_marginTop="20dp"
+               android:spinnerMode="dropdown"
+               />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/mobil"
-        android:layout_below="@id/format"
-        android:layout_marginTop="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(Toyota Rush)"
-        android:fontFamily="@font/regular"
-        android:textSize="12sp"
-        android:textColor="@color/black"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        />
+    </LinearLayout>
 
     <View
         android:id="@+id/line2"
-        android:layout_below="@id/line1"
-        android:layout_marginTop="127dp"
+        android:layout_below="@id/spesifikasi"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/line"
@@ -175,6 +211,7 @@
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="30dp"
+        android:gravity="center"
         android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
         android:layout_height="50dp">
@@ -182,14 +219,17 @@
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
             />
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
             />
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
             />
         <ImageButton
             android:layout_width="50dp"

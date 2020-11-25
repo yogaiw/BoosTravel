@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mitra_home">
+
+    <ImageView
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_header_mitra"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fitur"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="100dp"
+        />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_below="@id/fitur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/bold"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="Pesanan Masuk"
+        />
+
+    <TextView
+        android:id="@+id/keterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:text="Cek pesanan masuk disini ya"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+    <LinearLayout
+        android:id="@+id/pesanan"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keterangan">
+        <ImageView
+            android:layout_below="@id/keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sinarjaya"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="19:25 - 01:35"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5h 30m"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="Sinar Jaya"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="Bandung - Purwokerto"
+                android:textSize="9sp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/pesanan"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+</RelativeLayout>
