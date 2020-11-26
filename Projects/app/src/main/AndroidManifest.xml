@@ -17,10 +17,8 @@
         <activity android:name=".travel_tidak_ditemukan" />
         <activity android:name=".detail_travel_rute" />
         <activity android:name=".detail_travel_fitur" />
-        <activity android:name=".detail_travel" />
         <activity android:name=".pengumuman" />
         <activity android:name=".inspirasi_liburan" />
-        <activity android:name=".detail_konten" />
         <activity android:name=".pesanan" />
         <activity android:name=".feedback_terkirim" />
         <activity android:name=".feedback" />
@@ -28,18 +26,18 @@
         <activity android:name=".travel" />
         <activity android:name=".home" />
         <activity android:name=".welcome" />
-        <activity android:name=".splashscreen" />
-        <activity android:name=".daftar" />
-        <activity android:name=".daftar_mitra" />
-        <activity android:name=".daftar_user" />
-        <activity android:name=".login" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".daftar" />
+        <activity android:name=".daftar_mitra" />
+        <activity android:name=".daftar_user" />
+        <activity android:name=".login" />
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>

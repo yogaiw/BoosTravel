@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "769586776138",
+    "firebase_url": "https://boostravel-48df6.firebaseio.com",
+    "project_id": "boostravel-48df6",
+    "storage_bucket": "boostravel-48df6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769586776138:android:18546db2b0c8f029713eb3",
+        "android_client_info": {
+          "package_name": "com.stigma_mm1.boostravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769586776138-gg5006mvbc9s8l33res8sag43nic60pp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3rh9-W2j5ycx8WwRi2o7IstTMReQ9n5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769586776138-gg5006mvbc9s8l33res8sag43nic60pp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
