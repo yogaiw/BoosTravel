@@ -14,7 +14,7 @@
         android:src="@drawable/ic_atas_login"
         />
     <LinearLayout
-        android:id="@+id/login"
+        android:id="@+id/loginSec"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -27,15 +27,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pilih Akun!"
+            android:layout_marginTop="15dp"
             android:textSize="18sp"
-            android:layout_marginTop="40dp"
             android:fontFamily="@font/bold"
             />
 
         <Button
-            android:drawableLeft="@drawable/ic_btn_user"
             android:id="@+id/btnDaftarUser"
-            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_btn_user"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -46,10 +47,11 @@
             />
 
         <Button
-            android:drawableLeft="@drawable/ic_btn_mitra"
             android:id="@+id/btnDaftarMitra"
-            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_btn_mitra"
             android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textAllCaps="false"
@@ -67,7 +69,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_centerInParent="true"
-        android:layout_below="@id/login">
+        android:layout_below="@id/loginSec">
 
         <TextView
             android:layout_width="wrap_content"
@@ -75,19 +77,19 @@
             android:text="Sudah Punya Akun?"
             android:textAlignment="center"
             android:fontFamily="@font/regular"
-            android:textSize="12sp"
+            android:textSize="13sp"
             android:gravity="center_horizontal"
             />
 
         <TextView
-            android:id="@+id/Login"
+            android:id="@+id/loginBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bold"
             android:layout_marginLeft="5dp"
             android:text="Login"
             android:textColor="@color/main"
-            android:textSize="12sp"
+            android:textSize="13sp"
             />
     </LinearLayout>
 </RelativeLayout>

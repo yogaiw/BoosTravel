@@ -27,8 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12sp"
-            android:text="NAMA"
-            android:layout_marginTop="30sp"
+            android:text="Nama"
+            android:layout_marginTop="10sp"
             android:fontFamily="@font/bold"
             />
 
@@ -36,14 +36,14 @@
             android:id="@+id/edtNama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"/>
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12sp"
-            android:text="EMAIL"
-            android:layout_marginTop="30sp"
+            android:text="E-Mail"
+            android:layout_marginTop="20sp"
             android:fontFamily="@font/bold"
             />
 
@@ -51,14 +51,14 @@
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"/>
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12sp"
-            android:text="NO HP"
-            android:layout_marginTop="30sp"
+            android:text="Nomor HP/WhatsApp"
+            android:layout_marginTop="20sp"
             android:fontFamily="@font/bold"
             />
 
@@ -66,15 +66,14 @@
             android:id="@+id/edtNoHp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12sp"
-            android:text="ALAMAT"
-            android:layout_marginTop="30sp"
+            android:text="Alamat"
+            android:layout_marginTop="20sp"
             android:fontFamily="@font/bold"
             />
 
@@ -82,15 +81,14 @@
             android:id="@+id/edtAlamat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12sp"
-            android:text="PASSWORD"
-            android:layout_marginTop="30sp"
+            android:text="Password"
+            android:layout_marginTop="20sp"
             android:fontFamily="@font/bold"
             />
 
@@ -98,18 +96,18 @@
             android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
             />
 
         <Button
             android:id="@+id/btnDaftar"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:backgroundTint="@color/main"
             android:textAllCaps="false"
-            android:text="Daftar"
+            android:text="DAFTAR"
             android:fontFamily="@font/bold"
             />
     </LinearLayout>

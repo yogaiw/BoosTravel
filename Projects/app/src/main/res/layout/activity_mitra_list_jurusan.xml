@@ -465,9 +465,10 @@
             android:textAllCaps="false"
             android:fontFamily="@font/bold"
             android:textSize="14sp"
+            android:padding="12sp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:layout_marginTop="46dp"
+            android:layout_marginTop="30dp"
             android:backgroundTint="@color/main"
             android:layout_below="@id/jurusan"
             />
