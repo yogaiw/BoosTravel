@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">BoosTravel</string>
+    <string name="title_activity_detail">ScrollingActivity</string>
+    <string name="large_text">
+        "Berita COVID-19 Indonesia.\n\n"
+
+        "Jumlah kasus virus corona atau Covid-19 di Indonesia kian bertambah."
+        "Dikutip dari covid19.go.id, hingga Minggu (29/11/2020), total sudah ada 534.266 kasus Covid-19 di Indonesia."
+        "Penambahan kasus baru mencapai 6.267 kasus dalam 24 jam terakhir."
+        "Kabar baiknya, pasien sembuh bertambah 3.810 orang.Sehingga, total kesembuhan berjumlah 445.793 orang.Adapun kasus kematian bertambah 169.Jumlah kasus berujung kematian menjadi 16.815.\n\n"
+
+        "Jokowi Kecewa Penanganan Covid: Memburuk Semuanya!.\n\n"
+
+        "Presiden Joko Widodo (Jokowi) tak bisa menyembunyikan rasa kecewanya, lantaran penanganan Covid-19 di Indonesia bukan semakin membaik, malah kian memburuk. "
+        "Hal tersebut dikemukakan Jokowi saat memimpin rapat terbatas dengan topik pembahasan Laporan Komite Penanganan Covid-19 dan Pemulihan Ekonomi Nasional, "
+        "di Istana Merdeka, kompleks Istana Kepresidenan, Jakarta."
+        "Berdasarkan data yang diterima Kepala Negara per 29 November 2020, rata-rata kasus aktif meningkat menjadi 13,41%."
+        "Meskipun masih lebih baik dari angka dunia, namun ini lebih tinggi dibandingkan rata-rata kasus aktif minggu lalu yang berada di 12,78%."
+        "Tercatat sebanyak 4 kali Indonesia mencetak rekor pertambahan kasus harian. Yang tertinggi terjadi pada Minggu (29/11/2020) dengan 6.267 pasien Covid-19 dalam sehari. "
+        "Selain itu, juga ada rekor kasus kematian dengan 169 pasien meninggal dalam sehari pada 27 November 2020. Kemarin, kasus kematian juga menyamai rekor tersebut.\n\n"
+
+    </string>
+    <string name="action_settings">Settings</string>
 </resources>

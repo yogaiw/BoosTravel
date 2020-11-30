@@ -9,6 +9,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
     <style name="spinner_style">
         <item name="android:paddingLeft">0dp</item>
         <item name="android:dropDownWidth">533dp</item>
@@ -18,4 +19,13 @@
         <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
         <item name="android:dropDownSelector">@color/main</item>
     </style>
+
+    <style name="Theme.BoosTravel.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.BoosTravel.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.BoosTravel.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
