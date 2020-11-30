@@ -6,6 +6,9 @@ import android.util.Log
 import com.stigma_mm1.boostravel.adapter.ListPesananUser
 
 class pesanan : AppCompatActivity() {
+    companion object {
+        const val EXTRA_MYDATA = "extra_mydata"
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pesanan)

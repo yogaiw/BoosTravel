@@ -8,4 +8,9 @@ class inspirasi_liburan : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inspirasi_liburan)
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }

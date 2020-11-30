@@ -10,8 +10,6 @@ class home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        btnPengumuman1.setOnClickListener {
-            startActivity(Intent(this, DetailActivity::class.java))
-        }
+
     }
 }

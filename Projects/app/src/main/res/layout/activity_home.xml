@@ -75,7 +75,7 @@
             android:background="@color/line"
             />
         <Button
-            android:id="@+id/btn_Pesanan"
+            android:id="@+id/btn_pesanan_anda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Pesanan Anda"
@@ -89,7 +89,7 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/pengumuman"
+        android:id="@+id/pengumuman_section"
         android:layout_below="@id/fitur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
         />
     <TextView
         android:id="@+id/penjelasan_pengumuman"
-        android:layout_below="@id/pengumuman"
+        android:layout_below="@id/pengumuman_section"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
@@ -189,6 +189,7 @@
             app:cardBackgroundColor="@color/white"
             android:outlineSpotShadowColor="@color/white">
             <RelativeLayout
+                android:id="@+id/inspirasi_liburan1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -214,12 +215,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Alam memang memberikan kesegaran untuk kita"
-                    android:textSize="12sp"
-                    android:layout_marginLeft="10dp"
                     android:fontFamily="@font/regular"
+                    android:textSize="12sp"
                     android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="126dp"
+                    android:text="Alam memang memberikan kesegaran untuk kita"
                     />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
