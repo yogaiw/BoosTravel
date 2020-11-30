@@ -6,9 +6,12 @@ import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.OnFailureListener
 import com.google.android.gms.tasks.OnSuccessListener
+import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -29,7 +32,15 @@ class login : AppCompatActivity() {
 
             fAuth.signInWithEmailAndPassword(edtEmail.text.toString(), edtPassword.text.toString()).addOnSuccessListener(OnSuccessListener {
                 Toast.makeText(this, "Login Berhasil", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, home::class.java))
+                val df: DocumentReference = fStore.collection("Users").document(it.user?.uid.toString())
+
+                df.get().addOnSuccessListener(OnSuccessListener {
+                    if(it.getString("isMitra") == "0") {
+                        startActivity(Intent(this, home::class.java))
+                    } else {
+                        startActivity(Intent(this, mitra_home::class.java))
+                    }
+                })
             }).addOnFailureListener { OnFailureListener {
                 Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
             }}

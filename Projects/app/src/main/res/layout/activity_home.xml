@@ -104,7 +104,7 @@
         />
 
     <LinearLayout
-        android:id="@+id/btn_pengumuman"
+        android:id="@+id/layout_pengumuman"
         android:layout_below="@id/penjelasan_pengumuman"
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
@@ -115,6 +115,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp">
         <Button
+            android:id="@+id/btnPengumuman1"
             android:layout_width="150dp"
             android:layout_height="match_parent"
             android:layout_marginRight="30dp"
@@ -124,6 +125,7 @@
             android:backgroundTint="@color/button"
             />
         <Button
+            android:id="@+id/btnPengumuman2"
             android:layout_marginLeft="10dp"
             android:layout_width="150dp"
             android:layout_height="match_parent"
@@ -136,7 +138,7 @@
 
     <TextView
         android:id="@+id/inspirasiliburan"
-        android:layout_below="@id/btn_pengumuman"
+        android:layout_below="@id/layout_pengumuman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
