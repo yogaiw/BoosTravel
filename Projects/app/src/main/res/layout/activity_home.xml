@@ -13,6 +13,16 @@
         android:src="@drawable/ic_boostravel"
         />
 
+    <ImageButton
+        android:id="@+id/btn_akun_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_akun_user"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/fitur"
         android:layout_marginTop="120dp"
@@ -76,7 +86,6 @@
             android:backgroundTint="@color/white"
             android:layout_marginTop="55dp"
             />
-
     </androidx.cardview.widget.CardView>
 
     <TextView
