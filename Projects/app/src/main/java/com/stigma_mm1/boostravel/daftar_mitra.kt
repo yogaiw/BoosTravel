@@ -1,12 +1,24 @@
 package com.stigma_mm1.boostravel
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.EditText
 import android.widget.Toast
+import com.google.android.gms.tasks.OnFailureListener
+import com.google.android.gms.tasks.OnSuccessListener
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.DocumentReference
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_daftar_mitra.*
 
 class daftar_mitra : AppCompatActivity() {
+
+    var valid: Boolean = true
+    val fAuth: FirebaseAuth = FirebaseAuth.getInstance()
+    val fStore: FirebaseFirestore = FirebaseFirestore.getInstance()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_daftar_mitra)
@@ -18,10 +30,42 @@ class daftar_mitra : AppCompatActivity() {
             val alamatM = edtAlamat.text.toString()
             val pwdM = edtPassword.text.toString()
 
-            Log.d("ActivityState", "Berhasil terdaftar")
-            Toast.makeText(applicationContext, "Berhasil terdaftar", Toast.LENGTH_SHORT).show()
+            checkField(edtNama)
+            checkField(edtEmail)
+            checkField(edtNoHp)
+            checkField(edtAlamat)
+            checkField(edtPassword)
 
+            if(valid) {
+                fAuth.createUserWithEmailAndPassword(emailM, pwdM).addOnSuccessListener(OnSuccessListener {
+                    Toast.makeText(this,"Berhasil Dibuat",Toast.LENGTH_SHORT).show()
 
+                    val df: DocumentReference = fStore.collection("Users").document(FirebaseAuth.getInstance().uid!!)
+                    val userMap: HashMap<String, String> = HashMap()
+
+                    userMap.put("nama", namaM)
+                    userMap.put("email", emailM)
+                    userMap.put("hp", hpM)
+                    userMap.put("alamat", alamatM)
+                    userMap.put("isMitra", "1")
+
+                    df.set(userMap)
+
+                    startActivity(Intent(this, mitra_home::class.java))
+                    finish()
+                }).addOnFailureListener(OnFailureListener {
+                    Toast.makeText(this, "Pendaftaran Gagal", Toast.LENGTH_SHORT).show()
+                })
+            }
+        }
+    }
+
+    private fun checkField(textField: EditText) {
+        if(textField.getText().toString().isEmpty()) {
+            textField.setError("Wajib Diisi")
+            valid = false
+        } else {
+            valid = true
         }
     }
 }
