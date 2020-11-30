@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mitra_riwayat_pesanan">
+    tools:context=".MitraRiwayatPesanan">
 
     <ImageView
         android:id="@+id/logo"
@@ -36,75 +36,13 @@
         android:textColor="@color/white"
         />
 
-    <LinearLayout
-        android:id="@+id/pesanan1"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/list_mitra_riwayat_pesanan_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/logo">
-        <ImageView
-            android:layout_below="@id/keterangan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_icon"
-            android:layout_gravity="center"
-            />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sinarjaya"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="19:25 - 01:35"
-                android:fontFamily="@font/bold"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5h 30m"
-                android:textSize="10sp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/regular"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/bold"
-                android:text="Sinar Jaya"
-                android:textColor="@color/black"
-                android:layout_marginTop="5dp"
-                android:textSize="10sp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/regular"
-                android:text="Bandung - Purwokerto"
-                android:textSize="9sp"
-                android:textColor="@color/black"
-                />
-        </LinearLayout>
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logo"
+        android:paddingTop="15dp">
 
-    <View
-        android:id="@+id/line1"
-        android:layout_below="@id/pesanan1"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/line"
-        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </RelativeLayout>
