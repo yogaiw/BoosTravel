@@ -10,6 +10,12 @@ class home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        btn_travel.setOnClickListener {
+            startActivity(Intent(this, list_travel::class.java))
+        }
 
+        iv_inspirasi_liburan.setOnClickListener {
+            startActivity(Intent(this, inspirasi_liburan::class.java))
+        }
     }
 }

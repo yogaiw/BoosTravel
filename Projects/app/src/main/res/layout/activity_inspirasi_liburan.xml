@@ -44,6 +44,11 @@
         android:background="@drawable/inspirasiliburan"
         />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ScrollView>
     <TextView
         android:id="@+id/judul"
         android:layout_below="@id/gambar"
@@ -52,17 +57,22 @@
         android:layout_marginEnd="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="#JASMERAH Jangan Lupakan SejarahDunia"
+        android:text="@string/title_inspirasi_liburan"
         android:fontFamily="@font/bold"
         android:textColor="@color/black"
         android:textSize="18dp"
         />
+    <ScrollView
+        android:layout_below="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+    </ScrollView>
     <TextView
         android:id="@+id/kalimat1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna ac amet facilisi non consectetur non nec vel urna. In mauris turpis mauris justo, elementum id quam congue. Molestie consequat molestie nunc, molestie dui fermentum, scelerisque vel. Commodo congue ultricies ac arcu, pellentesque nunc."
+        android:text="@string/content_inspirasi_liburan"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:layout_marginStart="30dp"
@@ -70,20 +80,21 @@
         android:textColor="@color/black"
         android:textSize="12sp"
         android:layout_below="@id/judul"
+        android:justificationMode="inter_word"
         />
 
-    <TextView
-        android:id="@+id/kalimat2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna ac amet facilisi non consectetur non nec vel urna. In mauris turpis mauris justo, elementum id quam congue. Molestie consequat molestie nunc, molestie dui fermentum, scelerisque vel. Commodo congue ultricies ac arcu, pellentesque nunc."
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:fontFamily="@font/regular"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        android:layout_below="@id/kalimat1"
-        />
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/kalimat1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnCekLokasi"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="CEK LOKASI"
+            android:backgroundTint="@color/button"/>
+    </LinearLayout>
 
 </RelativeLayout>

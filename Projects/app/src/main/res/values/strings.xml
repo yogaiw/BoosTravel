@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">BoosTravel</string>
-    <string name="title_activity_detail">ScrollingActivity</string>
+    <string name="title_activity_detail">News</string>
     <string name="large_text">
-        "Berita COVID-19 Indonesia.\n\n"
-
         "Jumlah kasus virus corona atau Covid-19 di Indonesia kian bertambah."
         "Dikutip dari covid19.go.id, hingga Minggu (29/11/2020), total sudah ada 534.266 kasus Covid-19 di Indonesia."
         "Penambahan kasus baru mencapai 6.267 kasus dalam 24 jam terakhir."
@@ -20,5 +18,11 @@
         "Selain itu, juga ada rekor kasus kematian dengan 169 pasien meninggal dalam sehari pada 27 November 2020. Kemarin, kasus kematian juga menyamai rekor tersebut.\n\n"
 
     </string>
+    <string name ="title_inspirasi_liburan">Hutan Pinus Limpakuwus</string>
+    <string name="content_inspirasi_liburan">
+        Hutan Pinus Limpakuwus Baturaden terletak di lereng Gunung Slamet yang berada pada ketinggian sekitar 750 Mdpl. Memiliki luas hutan pinus sekitar 10 hektar dengan menyuguhkan berbagai wahana dan fasilitas yang memadai. Suguhan utama yang paling menarik di tempat ini adalah pohon pohon pinus itu sendiri yang masih asri dan rindang serta sejuk, tentunya menjadikan liburan kalian lebih terkesan sekaligus menyehatkan.\n\n
+        Selain itu Tempat Wisata Alam di Banyumas Jawa Tengah ini menyediakan wahana dan fasilitas lainnya yang menarik. Mengunjungi Hutan Pinus Limpakuwus Baturaden nantina wisatawan akan menemukan berbagai keseruan. Salah satunya berbagai spot foto instagramable, tempat wisata ini sangat cocok untuk dijadikan tempat mengabadikan momen bersama keluarga, teman dekat, serta pasangan.\n\n
+    </string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
