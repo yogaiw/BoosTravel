@@ -41,6 +41,7 @@ class DaftarMitraActivity : AppCompatActivity() {
                     Toast.makeText(this,"Berhasil Dibuat",Toast.LENGTH_SHORT).show()
 
                     val df: DocumentReference = fStore.collection("Users").document(FirebaseAuth.getInstance().uid!!)
+
                     val userMap: HashMap<String, String> = HashMap()
 
                     userMap.put("nama", namaM)
