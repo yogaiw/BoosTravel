@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mitra_home">
+    tools:context=".mitra_side.DashboardMitraActivity">
 
     <ImageView
         android:id="@+id/atas"

@@ -3,9 +3,9 @@ package com.stigma_mm1.boostravel
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.stigma_mm1.boostravel.adapter.ItemListTravelView
+import com.stigma_mm1.boostravel.fragments.ItemListTravelView
 
-class list_travel : AppCompatActivity() {
+class ListTravelActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_travel)

@@ -7,5 +7,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutManager="LinearLayoutManager"
-    tools:context=".adapter.ListPesananUser"
+    tools:context=".fragments.ListPesananUser"
     tools:listitem="@layout/fragment_list_pesanan_user" />

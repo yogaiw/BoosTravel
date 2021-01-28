@@ -3,7 +3,7 @@ package com.stigma_mm1.boostravel
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.stigma_mm1.boostravel.adapter.ListMitraRiwayatPesanan
+import com.stigma_mm1.boostravel.fragments.ListMitraRiwayatPesanan
 
 class mitra_riwayat_pesanan : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

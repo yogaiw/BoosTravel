@@ -12,12 +12,12 @@ class welcome : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
 
         btn_login.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, login::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         })
 
         btn_daftar.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, daftar::class.java)
+            val intent = Intent(this, DaftarActivity::class.java)
             startActivity(intent)
         })
     }

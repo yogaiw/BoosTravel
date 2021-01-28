@@ -7,5 +7,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutManager="LinearLayoutManager"
-    tools:context=".adapter.ListMitraRiwayatPesanan"
+    tools:context=".fragments.ListMitraRiwayatPesanan"
     tools:listitem="@layout/fragment_mitra_riwayat_pesanan" />

@@ -1,11 +1,12 @@
-package com.stigma_mm1.boostravel
+package com.stigma_mm1.boostravel.user_side
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.stigma_mm1.boostravel.adapter.ListPesananUser
+import com.stigma_mm1.boostravel.R
+import com.stigma_mm1.boostravel.fragments.ListPesananUser
 
-class pesanan : AppCompatActivity() {
+class PesananActivity : AppCompatActivity() {
     companion object {
         const val EXTRA_MYDATA = "extra_mydata"
     }

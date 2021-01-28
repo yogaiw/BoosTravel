@@ -1,6 +1,5 @@
 package com.stigma_mm1.boostravel.adapter
 
-import android.content.Intent
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +7,6 @@ import android.view.ViewGroup
 import com.stigma_mm1.boostravel.R
 
 import com.stigma_mm1.boostravel.adapter.dummy.DummyContent.DummyItem
-import com.stigma_mm1.boostravel.pesanan
 
 /**
  * [RecyclerView.Adapter] that can display a [DummyItem].

@@ -1,4 +1,4 @@
-package com.stigma_mm1.boostravel.adapter
+package com.stigma_mm1.boostravel.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.stigma_mm1.boostravel.R
+import com.stigma_mm1.boostravel.adapter.ListTravelRecyclerViewAdapter
 import com.stigma_mm1.boostravel.adapter.dummy.DummyContent
 
 /**

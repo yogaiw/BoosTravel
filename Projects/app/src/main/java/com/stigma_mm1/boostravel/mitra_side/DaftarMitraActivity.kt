@@ -1,9 +1,8 @@
-package com.stigma_mm1.boostravel
+package com.stigma_mm1.boostravel.mitra_side
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
 import com.google.android.gms.tasks.OnFailureListener
@@ -11,9 +10,10 @@ import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
+import com.stigma_mm1.boostravel.R
 import kotlinx.android.synthetic.main.activity_daftar_mitra.*
 
-class daftar_mitra : AppCompatActivity() {
+class DaftarMitraActivity : AppCompatActivity() {
 
     var valid: Boolean = true
     val fAuth: FirebaseAuth = FirebaseAuth.getInstance()
@@ -51,7 +51,7 @@ class daftar_mitra : AppCompatActivity() {
 
                     df.set(userMap)
 
-                    startActivity(Intent(this, mitra_home::class.java))
+                    startActivity(Intent(this, DashboardMitraActivity::class.java))
                     finish()
                 }).addOnFailureListener(OnFailureListener {
                     Toast.makeText(this, "Pendaftaran Gagal", Toast.LENGTH_SHORT).show()

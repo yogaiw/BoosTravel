@@ -1,25 +1,20 @@
-package com.stigma_mm1.boostravel
+package com.stigma_mm1.boostravel.user_side
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
-import androidx.annotation.NonNull
 import com.google.android.gms.tasks.OnFailureListener
 import com.google.android.gms.tasks.OnSuccessListener
-import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
+import com.stigma_mm1.boostravel.R
 import kotlinx.android.synthetic.main.activity_daftar_user.*
-import java.lang.Exception
-import java.util.*
 import kotlin.collections.HashMap
 
-class daftar_user : AppCompatActivity() {
+class DaftarUserActivity : AppCompatActivity() {
 
     var valid: Boolean = true
 
@@ -56,7 +51,7 @@ class daftar_user : AppCompatActivity() {
 
                         df.set(userMap)
 
-                        startActivity(Intent(this, home::class.java))
+                        startActivity(Intent(this, DashboardUserActivity::class.java))
                         finish()
 
                     }).addOnFailureListener(OnFailureListener {

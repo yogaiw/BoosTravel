@@ -40,31 +40,28 @@
         <activity android:name=".mitra_tambah_jurusan" />
         <activity android:name=".mitra_lihat_feedback" />
         <activity android:name=".mitra_riwayat_pesanan" />
-        <activity android:name=".mitra_home" />
-        <activity android:name=".travel_tidak_ditemukan" />
+        <activity android:name=".mitra_side.DashboardMitraActivity" />
         <activity android:name=".detail_travel_rute" />
         <activity android:name=".detail_travel_fitur" />
-        <activity android:name=".pengumuman" />
+        <activity android:name=".PengumumanActivity" />
         <activity android:name=".inspirasi_liburan" />
-        <activity android:name=".pesanan" />
-        <activity android:name=".feedback_terkirim" />
-        <activity android:name=".feedback" />
-        <activity android:name=".list_travel" />
-        <activity android:name=".travel" />
-        <activity android:name=".home" />
+        <activity android:name=".user_side.PesananActivity" />
+        <activity android:name=".user_side.FeedbackActivity" />
+        <activity android:name=".ListTravelActivity" />
+        <activity android:name=".SearchTravelActivity" />
+        <activity android:name=".user_side.DashboardUserActivity" />
         <activity android:name=".welcome" />
-        <activity android:name=".splashscreen">
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".daftar" />
-        <activity android:name=".daftar_mitra" />
-        <activity android:name=".daftar_user" />
-        <activity android:name=".login" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".DaftarActivity" />
+        <activity android:name=".mitra_side.DaftarMitraActivity" />
+        <activity android:name=".user_side.DaftarUserActivity" />
+        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>
