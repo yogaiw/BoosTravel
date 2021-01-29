@@ -1,54 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_marginTop="20dp"
     android:layout_marginBottom="10dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/logoTravel"
-            android:layout_width="wrap_content"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_item_travel"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/sinarjaya"
-            />
-        <TextView
-            android:id="@+id/estimasiRute"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="19:25 - 01:35"
-            android:fontFamily="@font/bold"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            />
-        <TextView
-            android:id="@+id/totalJalan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/regular"
-            android:text="5h 30m"
-            android:textColor="@color/black"
-            android:textSize="12sp" />
+            android:padding="12dp"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp"
+            app:cardUseCompatPadding="true">
 
-        <TextView
-            android:id="@+id/namaTravel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bold"
-            android:text="Sinar Jaya"
-            android:textColor="@color/black"
-            android:layout_marginTop="5dp"
-            android:textSize="13sp"
-            />
-        <TextView
-            android:id="@+id/rutePerjalanan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/regular"
-            android:text="Bandung - Purwokerto"
-            android:textSize="10sp"
-            android:textColor="@color/black"
-            />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/logoTravel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sinarjaya"
+                            />
+                        <TextView
+                            android:id="@+id/estimasiRute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="19:25 - 01:35"
+                            android:fontFamily="@font/bold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            />
+                        <TextView
+                            android:id="@+id/totalJalan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/regular"
+                            android:text="5h 30m"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/namaTravel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bold"
+                            android:text="Sinar Jaya"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"
+                            />
+                        <TextView
+                            android:id="@+id/rutePerjalanan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/regular"
+                            android:text="Bandung - Purwokerto"
+                            android:textSize="10sp"
+                            android:textColor="@color/black"
+                            />
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
 </LinearLayout>

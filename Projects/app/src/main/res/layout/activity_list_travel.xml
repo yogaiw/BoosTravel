@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ListTravelActivity">
 
+
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
@@ -56,10 +57,11 @@
         />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/list_travel_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/list_travel_container"
         android:layout_alignTop="@id/line1">
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
