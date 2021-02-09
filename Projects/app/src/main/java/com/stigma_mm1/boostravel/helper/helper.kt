@@ -1,4 +1,4 @@
-package com.stigma_mm1.boostravel
+package com.stigma_mm1.boostravel.helper
 
 object helper {
     const val EXTRA_TRAVEL = "extra_quote"
