@@ -40,16 +40,10 @@ class TambahJurusanActivity : AppCompatActivity() {
         val tambahJurusan = firestore.collection("ListTravel").document()
 
         btn_tambah.setOnClickListener {
-            var namaTravel = ""
             val destinasi = tambah_dari.selectedItem.toString() + " - " + tambah_ke.selectedItem.toString()
 
-            firestore.collection("Users").document(auth.uid!!).get().addOnSuccessListener {
-                namaTravel = it.get("nama").toString()
-                Log.d("NamaTravel", namaTravel)
-            }
-
             tambahTravelMap.put("uid", auth.uid!!)
-            tambahTravelMap.put("namaTravel", namaTravel)
+            tambahTravelMap.put("namaTravel", getNamaTravel())
             tambahTravelMap.put("rutePerjalanan", destinasi)
 
             tambahJurusan.set(tambahTravelMap)
@@ -72,6 +66,15 @@ class TambahJurusanActivity : AppCompatActivity() {
             Toast.makeText(this, "Kesalahan",Toast.LENGTH_SHORT).show()
         }
         return kotaSpinnerArray
+    }
+
+    private fun getNamaTravel(): String {
+        var mNamaTravel = ""
+        firestore.collection("Users").document(auth.uid!!).get().addOnSuccessListener {
+            mNamaTravel = it.get("nama").toString()
+            Log.d("NamaTravel", mNamaTravel)
+        }
+        return mNamaTravel
     }
 
     private fun setKota(paymentMethodSpinnerArray: ArrayList<String>) {
