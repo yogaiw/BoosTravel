@@ -21,20 +21,21 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="20px">
 
-                        <ImageView
+                        <!-- <ImageView
                             android:id="@+id/logoTravel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/sinarjaya"
-                            />
+                            /> -->
                         <TextView
-                            android:id="@+id/estimasiRute"
+                            android:id="@+id/namaTravel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
-                            android:text="19:25 - 01:35"
+                            android:text="Nama Travel"
                             android:fontFamily="@font/bold"
                             android:textColor="@color/black"
                             android:textSize="16sp"
@@ -49,11 +50,11 @@
                             android:textSize="12sp" />
 
                         <TextView
-                            android:id="@+id/namaTravel"
+                            android:id="@+id/estimasiRute"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/bold"
-                            android:text="Sinar Jaya"
+                            android:text="00.00 -00.00"
                             android:textColor="@color/black"
                             android:layout_marginTop="5dp"
                             android:textSize="13sp"

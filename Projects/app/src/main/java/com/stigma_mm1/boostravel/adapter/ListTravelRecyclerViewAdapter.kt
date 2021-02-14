@@ -35,10 +35,10 @@ class ListTravelRecyclerViewAdapter(var context: Context)
 
         fun bind(travel: Travel) {
             with(itemView){
-                Glide.with(itemView.context)
-                    .load(travel.logoTravel)
+                // Glide.with(itemView.context)
+                //    .load(travel.logoTravel)
 //                    .apply(RequestOptions().override(55, 55))
-                    .into(logoTravel)
+                //    .into(logoTravel)
                 estimasiRute.text = travel.estimasiRute
                 totalJalan.text = travel.totalJalan
                 namaTravel.text = travel.namaTravel
