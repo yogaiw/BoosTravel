@@ -41,7 +41,7 @@
         android:layout_below="@+id/welcome"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur Nulla lobortis in blandit a massa tellus feugiat dolor, Nisi, justo tellus posuere semper euismod."
+        android:text="Selamat datang diAplikasi BoosTravel untuk kalian yang belum memiliki akun silahkan daftar terlebih dahulu jika sudah memiliki akun bisa langsung login."
         android:gravity="center"
         android:fontFamily="@font/regular"
         android:textSize="14sp"
