@@ -30,8 +30,6 @@ class TambahJurusanActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tambah_jurusan)
 
-        val tambahTravelMap: HashMap<String, String> = HashMap()
-
         firestore = Firebase.firestore
         auth = Firebase.auth
 
@@ -41,12 +39,19 @@ class TambahJurusanActivity : AppCompatActivity() {
 
         btn_tambah.setOnClickListener {
             val destinasi = tambah_dari.selectedItem.toString() + " - " + tambah_ke.selectedItem.toString()
+            var mNamaTravel = ""
 
-            tambahTravelMap.put("uid", auth.uid!!)
-            tambahTravelMap.put("namaTravel", getNamaTravel())
-            tambahTravelMap.put("rutePerjalanan", destinasi)
+            firestore.collection("Users").document(auth.uid!!).get().addOnSuccessListener {
+                mNamaTravel = it.get("nama").toString()
+                Log.d("NamaTravel", mNamaTravel)
+            }
 
-            tambahJurusan.set(tambahTravelMap)
+            val tambah = hashMapOf(
+                "namaTravel" to mNamaTravel,
+                "rutePerjalanan" to destinasi,
+                "uid" to auth.uid!!
+            )
+            tambahJurusan.set(tambah)
 
             startActivity(Intent(this, DashboardMitraActivity::class.java))
             finish()
@@ -66,15 +71,6 @@ class TambahJurusanActivity : AppCompatActivity() {
             Toast.makeText(this, "Kesalahan",Toast.LENGTH_SHORT).show()
         }
         return kotaSpinnerArray
-    }
-
-    private fun getNamaTravel(): String {
-        var mNamaTravel = ""
-        firestore.collection("Users").document(auth.uid!!).get().addOnSuccessListener {
-            mNamaTravel = it.get("nama").toString()
-            Log.d("NamaTravel", mNamaTravel)
-        }
-        return mNamaTravel
     }
 
     private fun setKota(paymentMethodSpinnerArray: ArrayList<String>) {
