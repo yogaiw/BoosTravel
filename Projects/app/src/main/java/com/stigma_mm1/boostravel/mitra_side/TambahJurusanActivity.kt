@@ -38,20 +38,26 @@ class TambahJurusanActivity : AppCompatActivity() {
         val tambahJurusan = firestore.collection("ListTravel").document()
 
         btn_tambah.setOnClickListener {
+            val userDocRef = firestore.collection("Users").document(auth.uid!!)
             val destinasi = tambah_dari.selectedItem.toString() + " - " + tambah_ke.selectedItem.toString()
-            var mNamaTravel = ""
-
-            firestore.collection("Users").document(auth.uid!!).get().addOnSuccessListener {
-                mNamaTravel = it.get("nama").toString()
-                Log.d("NamaTravel", mNamaTravel)
+            val harga = edtHarga.text.toString()
+            println("for delay")
+            firestore.runTransaction {
+                val snapshot = it.get(userDocRef)
+                val mNamaTravel = snapshot.getString("nama")
+                it.update(tambahJurusan,"namaTravel", mNamaTravel)
+                null
             }
-
+            println("for delay")
             val tambah = hashMapOf(
-                "namaTravel" to mNamaTravel,
-                "rutePerjalanan" to destinasi,
-                "uid" to auth.uid!!
+                    "rutePerjalanan" to destinasi,
+                    "harga" to harga,
+                    "uid" to auth.uid!!,
             )
-            tambahJurusan.set(tambah)
+            println("for delay")
+            tambahJurusan.set(tambah).addOnSuccessListener {
+                Toast.makeText(this, "Jurusan Berhasil Ditambahkan", Toast.LENGTH_SHORT).show()
+            }
 
             startActivity(Intent(this, DashboardMitraActivity::class.java))
             finish()
