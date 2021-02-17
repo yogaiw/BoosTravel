@@ -43,6 +43,7 @@ class ListTravelRecyclerViewAdapter(var context: Context)
                 totalJalan.text = travel.totalJalan
                 namaTravel.text = travel.namaTravel
                 rutePerjalanan.text = travel.rutePerjalanan
+                txtHarga.text = travel.hargaPerjalanan
             }
             
         }

@@ -40,7 +40,7 @@ class TambahJurusanActivity : AppCompatActivity() {
         btn_tambah.setOnClickListener {
             val userDocRef = firestore.collection("Users").document(auth.uid!!)
             val destinasi = tambah_dari.selectedItem.toString() + " - " + tambah_ke.selectedItem.toString()
-            val harga = edtHarga.text.toString()
+            val harga = "Rp." + edtHarga.text.toString()
             println("for delay")
             firestore.runTransaction {
                 val snapshot = it.get(userDocRef)

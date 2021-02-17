@@ -64,7 +64,8 @@ class ListTravelActivity : AppCompatActivity() {
                         val totalJalan = document.get("totalJalan").toString()
                         val namaTravel = document.get("namaTravel").toString()
                         val rutePerjalanan = document.get("rutePerjalanan").toString()
-                        travelList.add(Travel(id, logo, estimasiRute, totalJalan, namaTravel, rutePerjalanan))
+                        val harga = document.get("harga").toString()
+                        travelList.add(Travel(id, logo, estimasiRute, totalJalan, namaTravel, rutePerjalanan, harga))
                     }
                     if (travelList.size > 0) {
                         mFirstFragment.listTravel = travelList

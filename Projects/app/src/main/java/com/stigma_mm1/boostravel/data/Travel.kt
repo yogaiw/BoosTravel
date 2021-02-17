@@ -10,6 +10,7 @@ data class Travel (
     var estimasiRute: String,
     var totalJalan: String,
     var namaTravel: String,
-    var rutePerjalanan: String
+    var rutePerjalanan: String,
+    var hargaPerjalanan: String
 )
 : Parcelable
